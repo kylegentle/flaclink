@@ -1,0 +1,12 @@
+[Unit]
+Description=Run flaclink every 12-15 minutes
+Requires=flaclink.service
+
+[Timer]
+Unit=flaclink.service
+OnUnitInactiveSec=12m
+RandomizedDelaySec=3m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

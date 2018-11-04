@@ -1,0 +1,11 @@
+[Unit]
+Description=flaclink album linker
+Wants=flaclink.timer
+
+[Service]
+User=kyle
+Group=kyle
+ExecStart=/home/kyle/go/bin/flaclink /mnt/data/complete/ /mnt/data/plex/music/
+
+[Install]
+WantedBy=multi-user.target
