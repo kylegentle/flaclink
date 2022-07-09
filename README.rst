@@ -4,6 +4,8 @@ flaclink - a FLAC album linking service
 .. image:: https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg
    :target: https://opensource.org/licenses/MPL-2.0
 
+**Notice**: This project is considered complete, and is unlikely to see any future development.
+
 flaclink is a local Go service to automatically link downloaded FLAC albums to a directory of your choosing. flaclink uses hardlinks, so it's compatibile with Plex and other media servers. The sample systemd service runs every 12-15 minutes, but you can configure it to run as often as you'd like.
 
 flaclink uses bbolt_, an actively-maintained fork of the pure Go BoltDB_ embedded key/value store. bbolt is released under the `MIT License`_.
